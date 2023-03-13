@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+
+    <link rel="stylesheet" href="reset.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/jquery.slick/1.6.0/slick.css"/>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js"></script>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Veterinaria</title>
+</head>
+<body>
+    <header class="cabeçalho">
+        <div class="cabeçalho__conteudo">
+            <div class="cabeçalho__logo"><img src="./img/Header/Logo_Completa.png" alt="Logo da Veterinaria"></div>
+            <div class="cabeçalho__logo--mobile"><img class="cabeçalho__mobile--img" src="./img/Header/Logo.png" alt="Logo da Veterinaria"></div>
+            <div class="cabeçalho__lista">
+                <nav>
+                    <ul class="cabeçalho__itens">
+                        <li><a href="#" class="cabeçalho__itens--link">Home</a></li>
+                        <li><a href="#" class="cabeçalho__itens--link">About</a></li>
+                        <li><a href="#" class="cabeçalho__itens--link">Service</a></li>
+                        <li><a href="#" class="cabeçalho__itens--link">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="busca__container">
+                <input type="search"  id="search" class="busca__texto" placeholder="Search.." />
+                <button type="submit" id="botao" class="busca__submit"><img class="footer__contato--enviar" src="./img/Header/lupa.svg" alt=""></button>
+              </div>
+              <nav class="menu-hamburguer">
+                <input class="invisible" type="checkbox" id="menu-btn">
+                <label for="menu-btn" class="menu-icon">&#9776;</label>
+                <ul class="menu">
+                  <li class="menu__lista"><a class="menu__link" href="#">Home</a></li>
+                  <li class="menu__lista" ><a class="menu__link" href="#">About</a></li>
+                  <li class="menu__lista" ><a class="menu__link" href="#">Service</a></li>
+                  <li class="menu__lista" ><a class="menu__link" href="#">Contact</a></li>
+                </ul>
+                <button class="menu-hamburguer__fechar">&#xd7;</button>
+              </nav>
+        </div>  
+    </header>
+    <main class="container">
+        <section class="container__banner">
+            <div class="banner">
+                <div class="banner__texto">
+                    <h1 class="banner__texto--titulo">First I wanted to be a veterinarian</h1>
+                    <p class="banner__texto--paragrafo">Lorem Ipsum available but the majority have suffered alteration in some form, by injected humour randomised words.</p>
+                    <a href="#" class="banner__texto--link--1">Contact Us</a>
+                    <a href="#" class="banner__texto--link--2">Our Service</a>
+                </div>
+                <div class="banner__complemento">
+                    <img class="banner__complemento--imagem" src="./img/Banners/Cachorro.png" alt="Foto do cachorrinho">
+                </div>
+            </div>
+        </section>
+        <!--video 1-->
+        <section class="container__video">
+            <div class="quadrado-amarelo"></div>
+            <div class="video">
+                <div class="video__conteudo">
+                    <h2 class="video__conteudo--titulo">As a veterinarian and lover of animals.</h2>
+                    <p class="video__conteudo--paragrafo">Lorem Ipsum available but the majoty suffered alteration in some form, by humour randomised words.</p>
+                    <a href="#" class="botao__amarelo"> Our Service</a>
+                </div>
+                 <div class="video__espaço">
+                    <div class="video__player">
+                    <video id="video" src="./img/Video/videoteste.mp4"></video>
+                    <div id="overlay" class="overlay"></div>
+                    <button id="botao-play" class="botao__play"><img src="./img/Video/play.png" alt=""></button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- categoria 1-->
+        <section class="categorias">
+            <div class="container__categorias">
+
+            <h2 class="categorias__titulo">Title Here</h2>
+            <p class="categorias__subtitulo"> Lorem Ipsum available, but the majority have
+                suffered alteration in some form.</p>
+                <div class="categorias__conteudo">
+
+                    <div class="categorias__conteudo--conteudos">
+
+                        <img class="categorias__conteudo--imagem" src="./img/Categorias/img_1.png" alt="imagem de uma veterinaria mexendo no fucinho de um cachorro">
+                            <h3 class="categorias__conteudo--titulo">Veterinarian</h3>
+                        <p class="categorias__conteudo--paragrafo"> Lorem Ipsum available, but the majority have sufferedalteration in some.</p>
+
+                </div>
+                <div class="categorias__conteudo--conteudos">
+
+                <img class="categorias__conteudo--imagem" src="./img/Categorias/img_2.png" alt="um cachorro cheirando a mão de uma veterinaria">
+                <h3 class="categorias__conteudo--titulo">Vaccination Care</h3>
+                <p class="categorias__conteudo--paragrafo"> Lorem Ipsum available, but
+                    the majority have suffered
+                    alteration in some.</p>
+
+                </div>
+                <div class="categorias__conteudo--conteudos">
+
+                <img class="categorias__conteudo--imagem" src="./img/Categorias/img_3.png" alt="Imagem de uma veterinaria examinando um cachorro">
+                <h3 class="categorias__conteudo--titulo">Dental Care</h3>
+                <p class="categorias__conteudo--paragrafo"> Lorem Ipsum available, but
+                    the majority have suffered
+                    alteration in some.</p>
+                </div>
+            </div>
+            </div>
+        </section>
+        <!--video 2-->
+        <section class="container__video">
+            <div class="video">
+                 <div class="video__espaço">
+                    <div class="video__player">
+                    <video id="video" src="./img/Video/videoteste.mp4"></video>
+                    <div id="overlay" class="overlay"></div>
+                    <button id="botao-play" class="botao__play"><img src="./img/Video/play.png" alt=""></button>
+                    </div>
+                </div>
+                <div class="video__conteudo">
+                    <h2 class="video__conteudo--titulo">As a veterinarian and lover of animals.</h2>
+                    <p class="video__conteudo--paragrafo">Lorem Ipsum available but the majoty suffered alteration in some form, by humour randomised words.</p>
+                    <a href="#" class="botao__amarelo"> Our Service</a>
+                </div>
+            </div>
+        </section>
+        <!--categorias 2-->
+        <section class="categorias">
+            <div class="container__categorias">
+        
+              <h2 class="categorias__titulo">Title Here</h2>
+              <p class="categorias__subtitulo"> Lorem Ipsum available, but the majority have
+                suffered alteration in some form.</p>
+              <div class="categorias__conteudo">
+        
+                <div class="categorias__conteudo--conteudos">
+        
+                    <img class="categorias__conteudo--imagem" src="./img/Categorias/cachorro_1.png" alt="imagem de uma veterinaria mexendo no fucinho de um cachorro">
+                    <div class="categorias__conteudo--preço">
+                        <h3 class="categorias__preço--antigo">$50</h3>
+                        <h3 class="categorias__preço-novo">$30</h3>
+                    </div>
+                    <a href="#" class="categorias__conteudo--link">Buy now</a>
+        
+                </div>
+                <div class="categorias__conteudo--conteudos">
+        
+                  <img class="categorias__conteudo--imagem" src="./img/Categorias/cachorro_2.png" alt="um cachorro cheirando a mão de uma veterinaria">
+                    <div class="categorias__conteudo--preço">
+                        <h3 class="categorias__preço--antigo">$40</h3>
+                        <h3 class="categorias__preço-novo">$25</h3>
+                    </div>
+                    <a href="#" class="categorias__conteudo--link">Buy now</a>
+        
+                </div>
+                <div class="categorias__conteudo--conteudos">
+        
+                  <img class="categorias__conteudo--imagem" src="./img/Categorias/cachorro_3.png" alt="Imagem de uma veterinaria examinando um cachorro">
+                    <div class="categorias__conteudo--preço">
+                        <h3 class="categorias__preço--antigo">$45</h3>
+                        <h3 class="categorias__preço-novo">$20</h3>
+                    </div>
+                    <a href="#" class="categorias__conteudo--link">Buy now</a>
+
+                </div>
+              </div>
+            </div>
+        </section>
+        <!--profissionais-->
+        <section class="container__profissionais">
+            <!--para alinhar em coluna-->
+            <div class="profissionais">
+                <div class="profissionais__texto">
+                    <h2 class="profissionais__texto--titulo">The vetcare team</h2>
+                    <p class="profissionais__texto--subtitulo"> Lorem Ipsum available, but the majoty suffered alteration in some form.</p>
+                </div>
+                <!--alinhar lado a lado-->
+                <div class="profissionais__conteudo">
+                    <div class="profissionais_profissional">
+                        <img class="profissionais__imagem" src="./img/Profissionais/Jennifer Mullen.png" alt="imagem de um profissional de veterinaria">
+                        <h3 class="profissionais__nome">Jennifer Mullen</h3>
+                        <p class="profissionais__paragrafo"> VETERINARY</p>
+                            <ul class="profissionais__lista">
+                                <li class="profissionais__item"><a class="profissionais__link" href="https://google.com"><img class="profissionais__icone" src="./img/Profissionais/Instagram.png" alt="icone do instagram"></a>
+                                </li>
+                                <li class="profissionais__item"><a class="profissionais__link" href=""><img class="profissionais__icone" src="./img/Profissionais/Facebook.png" alt="icone do facebook"></a>
+                                </li>
+                                <li class="profissionais__item"><a class="profissionais__link" href=""><img class="profissionais__icone" src="./img/Profissionais/Twitter.png" alt="icone do twitter"></a>
+                                </li>
+                                <li class="profissionais__item"><a class="profissionais__link" href=""><img class="profissionais__icone" src="./img/Profissionais/WhatsApp.png" alt="icone do WhatsApp"></a>
+                                </li>
+                            </ul>
+                    </div>
+                    <div class="profissionais_profissional">
+                        <img class="profissionais__imagem" src="./img/Profissionais/Sheeren Collins.png" alt="imagem de um profissional de veterinaria">
+                        <h3 class="profissionais__nome">Sheeren Collins</h3>
+                        <p class="profissionais__paragrafo"> ADMINISTRATION</p>
+                            <ul class="profissionais__lista">
+                                <li class="profissionais__item"><a class="profissionais__link" href="https://google.com"><img class="profissionais__icone" src="./img/Profissionais/Instagram.png" alt="icone do instagram"></a>
+                                </li>
+                                <li class="profissionais__item"><a class="profissionais__link" href=""><img class="profissionais__icone" src="./img/Profissionais/Facebook.png" alt="icone do facebook"></a>
+                                </li>
+                                <li class="profissionais__item"><a class="profissionais__link" href=""><img class="profissionais__icone" src="./img/Profissionais/Twitter.png" alt="icone do twitter"></a>
+                                </li>
+                                <li class="profissionais__item"><a class="profissionais__link" href=""><img class="profissionais__icone" src="./img/Profissionais/WhatsApp.png" alt="icone do WhatsApp"></a>
+                                </li>
+                            </ul>
+                    </div>
+                    <div class="profissionais_profissional">
+                        <img class="profissionais__imagem" src="./img/Profissionais/Jennifer Mullen2.png" alt="imagem de um profissional de veterinaria">
+                        <h3 class="profissionais__nome">Jennifer Mullen</h3>
+                        <p class="profissionais__paragrafo"> VETERINARY</p>
+                            <ul class="profissionais__lista">
+                                <li class="profissionais__item"><a class="profissionais__link" href="https://google.com"><img class="profissionais__icone" src="./img/Profissionais/Instagram.png" alt="icone do instagram"></a>
+                                </li>
+                                <li class="profissionais__item"><a class="profissionais__link" href=""><img class="profissionais__icone" src="./img/Profissionais/Facebook.png" alt="icone do facebook"></a>
+                                </li>
+                                <li class="profissionais__item"><a class="profissionais__link" href=""><img class="profissionais__icone" src="./img/Profissionais/Twitter.png" alt="icone do twitter"></a>
+                                </li>
+                                <li class="profissionais__item"><a class="profissionais__link" href=""><img class="profissionais__icone" src="./img/Profissionais/WhatsApp.png" alt="icone do WhatsApp"></a>
+                                </li>
+                            </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="info" class="info">
+            <!--para alinhar em coluna-->
+            <div class="container__info">
+                <div class="info__conteudo">
+                    <img class="info__conteudo--imagem" src="./img/Info/clientesfelizes.svg" alt="icone de coração">
+                    <h3 class="info__numero" id="contador1">+34793</h3>
+                    <h2 class="info__titulo">Happy Clients</h2>
+                </div>
+                <div class="info__conteudo">
+                    <img class="info__conteudo--imagem" src="./img/Info/department.svg" alt="icone de coração">
+                    <h3 class="info__numero" id="contador2">+45382</h3>
+                    <h2 class="info__titulo">Department</h2>
+                </div>
+                <div class="info__conteudo">
+                    <img class="info__conteudo--imagem" src="./img/Info/vacina.svg" alt="icone de coração">
+                    <h3 class="info__numero" id="contador3">+54762</h3>
+                    <h2 class="info__titulo">Vaccinations</h2>
+                </div>
+            </div>
+
+        </section>
+        <section class="container__posts">
+
+            <div class="posts__titulo">
+                <h2 class="posts__titulo--titulo">Recent Posts</h2>
+                <p class="posts__titulo--subtitulo"> Lorem Ipsum available, but the majoty suffered alteration in some form.</p>
+                
+            </div>
+            <button class="next">Próximo</button>
+            <button class="prev">Anterior</button>
+            <div class="carrossel">
+
+                <div class="posts__conteudos">
+                    <div class="posts__conteudo">
+                        <img class="posts__imagem" src="./img/Posts/post1.png" alt="imagem de um post">
+                        <div class="posts__conteudo--borda">
+                            <h2 class="posts__nome">As a veterinarian and
+                                lover of animals</h2>
+                                <h3 class="post__data">FEBRUARY 09, 2020</h3>
+                                <p class="posts__paragrafo">Lorem Ipsum available, but the majo
+                                    rity have suffered alteration in some words which look.</p>
+                                <a href="#" class="posts__link">Read more+</a>
+                        </div>
+                    </div>
+                    <div class="posts__conteudo">
+                        <img class="posts__imagem" src="./img/Posts/post2.png" alt="imagem de um post">
+                        <div class="posts__conteudo--borda">
+                            <h2 class="posts__nome">As a veterinarian and
+                                lover of animals</h2>
+                                <h3 class="post__data">FEBRUARY 10, 2020</h3>
+                                <p class="posts__paragrafo">Lorem Ipsum available, but the majo
+                                    rity have suffered alteration in some words which look.</p>
+                                <a href="#" class="posts__link">Read more+</a>
+                        </div>
+                    </div>
+                    <div class="posts__conteudo">
+                        <img class="posts__imagem" src="./img/Posts/post3.png" alt="imagem de um post">
+                        <div class="posts__conteudo--borda">
+                            <h2 class="posts__nome">As a veterinarian and
+                                lover of animals</h2>
+                                <h3 class="post__data">FEBRUARY 11, 2020</h3>
+                                <p class="posts__paragrafo">Lorem Ipsum available, but the majo
+                                    rity have suffered alteration in some words which look.</p>
+                                <a href="#" class="posts__link">Read more+</a>
+                        </div>
+                    </div>
+
+                        
+                    
+                </div>
+            </div>
+
+
+        </section>
+    </main>
+    
+        <footer >
+            <div class="container__footer">
+                <div class="footer__conteudo">
+                <h4 class="footer__titulo">About</h4>
+                <ul>
+                    <li class="footer__lista--item"><a href="#" class="footer__lista--link">History</a></li>
+                    <li class="footer__lista--item"><a href="#" class="footer__lista--link">Our Team</a> </li>
+                    <li class="footer__lista--item"><a href="#" class="footer__lista--link">Brand Guidelines</a></li>
+                    <li class="footer__lista--item"><a href="#" class="footer__lista--link">Terms & Condition</a></li>
+                    <li class="footer__lista--item"><a href="#" class="footer__lista--link">Privacy Policy</a></li>
+                </ul>
+                </div>
+                <div class="footer__conteudo">
+                <h4 class="footer__titulo">Services</h4>
+                <ul>
+                    <li class="footer__lista--item"><a href="#" class="footer__lista--link">
+                        How to Order</a>
+                    </li>
+                    <li class="footer__lista--item"><a href="#" class="footer__lista--link">Our Product</a></li>
+                    <li class="footer__lista--item"><a href="#" class="footer__lista--link">Order Status</a></li>
+                    <li class="footer__lista--item"><a href="#" class="footer__lista--link">Promo</a></li>
+                    <li class="footer__lista--item"><a href="#" class="footer__lista--link">Payment Method</a></li>
+                </ul>
+                </div>
+            <div class="footer__contato">
+              <h4 class="footer__titulo--contato">Title Here</h4>
+              <p class="footer__contato--texto"> Lorem Ipsum available, but the majorit </p>
+              <div class="entrada__container">
+                <input type="text"  id="texto" class="entrada__texto" />
+                <button type="submit" id="botao" class="botao__enviar"><img class="footer__contato--enviar" src="./img/Footer/enviar.png" alt=""></button>
+              </div>
+              
+              <div class="footer__contato--icones">
+                <a  href="#"><img class="footer__icone--imagem" src="./img/Footer/Instagram.png" alt=""></a>
+                <a  href="#"><img class="footer__icone--imagem" src="./img/Footer/Facebook.png" alt=""></a>
+                <a  href="#"><img class="footer__icone--imagem" src="./img/Footer/Twitter.png" alt=""></a>
+                <a  href="#"><img class="footer__icone--imagem" src="./img/Footer/WhatsApp.png" alt=""></a>
+
+              </div>
+            </div>
+            </div>
+          </footer>
+          
+        <!-- <div class="container__footer">
+            <div class="footer__conteudo">
+            </div>
+        </div> -->
+
+
+
+        </div>
+    <script src="main.js"></script>
+</body>
+</html>
