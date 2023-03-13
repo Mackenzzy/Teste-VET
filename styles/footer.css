@@ -1,0 +1,156 @@
+footer {
+  background-color:var(--preto-fundo);
+  padding: 15% 0;
+}
+.container__footer{
+  padding: 0 15%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.footer__conteudo{
+  padding: 2em 0;
+}
+.footer__titulo{
+  font-size: 2em;
+  margin: 0.8em 0;
+}
+.footer__lista--item{
+  margin: 0.5em 0;
+}
+.footer__lista--link{
+  text-decoration: none;
+  color: var(--branco);
+}
+.footer__contato{
+  text-align: right;
+  padding: 1em 0;
+}
+.footer__titulo--contato{
+  font-size: 2em;
+  margin: 0.5em 0;
+}
+.footer__contato--texto{
+  font-size: 1.5em;
+  margin-bottom: 1em;
+}
+
+.entrada__container {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  margin-bottom: 1.5em;
+}
+
+.entrada__texto {
+  border: none;
+  width: 80%;
+  height: 4rem;
+  border: none;
+  background-color: var(--amarelo-claro);
+  color: #333;
+
+}
+
+.botao__enviar{
+  border:none;
+  width: 20%;
+  height: 4rem;
+  background-color:var(--azul);
+}
+.footer__contato--icones{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  gap: 1em;
+}
+
+
+@media (max-width: 992px) {
+  footer{
+    padding: 2em 0;
+  }
+  .container__footer{
+    padding: 0 1em;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 10%;
+  }
+  .footer__contato{
+    width: 40%;
+  }
+  .footer__titulo{
+    font-size: 1.5em;
+  }
+  .footer__lista--item{
+    font-size: 0.8em;
+  }
+  .footer__titulo--contato{
+    font-size: 1.5em;
+  }
+  .footer__contato--texto{
+    font-size: 0.8em;
+  }
+  .entrada__texto{
+    height: 3rem;
+  }
+  .botao__enviar{
+    height: 3rem;
+  }
+  .footer__contato--enviar{
+    width: 70%;
+  }
+  .footer__icone--imagem{
+    width: 100%;
+  }
+
+}
+@media (max-width: 767px) {
+  .container__footer{
+    padding: 0 15%;
+  }
+  .entrada__texto{
+    height: 2rem;
+  }
+  .botao__enviar{
+    height: 2rem;
+  } 
+}
+@media(max-width: 480px) {
+  .container__footer{
+    padding: 0 1em;
+  }
+  .footer__contato{
+    width: 40%;
+  }
+  .footer__titulo{
+    font-size: 1.5em;
+  }
+  .footer__lista--item{
+    font-size: 0.8em;
+  }
+  .footer__titulo--contato{
+    font-size: 1.5em;
+  }
+  .footer__contato--texto{
+    font-size: 0.8em;
+  }
+  .entrada__texto{
+    height: 2rem;
+  }
+  .botao__enviar{
+    height: 2rem;
+  }
+}
+@media(max-width: 320px) {
+  .footer__conteudo{
+    display: none;
+  }
+  .footer__contato{
+    width: 100%;
+  }
+  .footer__contato--enviar{
+    width: 50%;
+  }
+}

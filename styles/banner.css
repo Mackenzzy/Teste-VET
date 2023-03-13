@@ -1,0 +1,155 @@
+.container__banner{
+    background: var(--amarelo-claro);
+}
+
+.banner{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 10em 5em;
+    margin: 0 5em;
+}
+.banner__texto{
+    width: 70%;
+}
+.banner__texto--titulo{
+    font-size: 4.1em;
+    font-weight: 600;
+    line-height: 1em;
+}
+.banner__texto--paragrafo{
+    margin-top: 1em;
+    font-size: 1.8em;
+    font-weight: 400;
+    line-height: 1.2em;
+    margin-bottom: 3em;
+}
+
+
+.banner__texto--link--1,
+.banner__texto--link--2{
+    font-weight: 600;
+    margin-top: 2em;
+    text-decoration: none;
+    color: var(--branco);
+    padding: 1em 1.7em;
+    border-radius: 0.3em;
+    transition: all 0.5s ease-in-out;
+
+}
+.banner__texto--link--1{
+    background: var(--azul);
+    border: 2px solid var(--azul);
+    margin-right: 2em;
+}
+.banner__texto--link--2{
+    border: 2px solid var(--branco);
+}
+.banner__texto--link--1:hover{
+    color: var(--branco);
+    background:none;
+    border: 2px solid var(--branco);
+}
+
+.banner__texto--link--2:hover{
+    background: var(--branco);
+    color: var(--amarelo-escuro);
+}
+.banner__complemento--imagem{
+    position: relative;
+    align-items: center;
+    transition: all 1s ease-in-out;
+}
+.banner__complemento--imagem:hover{
+    transform: scale(1.05);
+}
+
+
+@media (max-width: 767px) {
+    .banner__texto--link--1{
+        margin-right: 5%;
+    }
+    .banner{
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        padding: 2em 0;
+        margin: 0 0;
+    }
+    .banner__complemento{
+        width: auto;
+        overflow: hidden;
+        box-sizing: border-box;
+    }
+    .banner__texto{
+        margin: 0 2em;
+    }
+    .banner__texto--titulo{
+        font-size: 3em;
+    }
+    .banner__texto--paragrafo{
+        font: 1em;
+    }
+}
+@media (max-width: 480px) {
+    .banner{
+        display: flex;
+        flex-direction: column;
+        background-image: url(../img/Banners/Cachorro.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center;
+
+    }
+    .banner__complemento--imagem{
+        display: none;
+    }
+    .banner__texto--titulo{
+        text-shadow: 2px 2px 5px var(--preto-fundo);
+    }
+    .banner__texto--paragrafo{
+        text-shadow: 2px 2px 2px var(--preto-fundo);
+    }
+}
+@media (max-width: 320px) {
+    .banner{
+        padding: 0;
+        margin: 0;
+        height: 100vh;
+    }
+    .banner__texto{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: 100%;
+        margin: 10% 0;
+        padding: 0 2%;
+    }
+    .banner__texto--titulo{
+        font-size: 2em;
+        width: 100%;
+        padding: 0;
+        margin-bottom: 50%;
+    }
+    .banner__texto--paragrafo{
+        padding-top: 50%;
+        font-size: 1em;
+        margin-bottom: 0;
+    }
+    .banner__texto--link--1,.banner__texto--link--2{
+        font-weight: 600;
+        text-decoration: none;
+        color: var(--branco);
+        border-radius: 0.3em;
+        width: fit-content;
+    
+    }
+    .banner__texto--link--1{
+        border: 2px solid var(--azul);
+
+    }
+    .banner__texto--link--2{
+        border: 2px solid var(--branco);
+    }
+
+}

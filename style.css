@@ -1,0 +1,31 @@
+@import url(./styles/header.css);
+@import url(./styles/banner.css);
+@import url(./styles/tela_video.css);
+@import url(./styles/categorias.css);
+@import url(./styles/profissionais.css);
+@import url(./styles/info.css);
+@import url(./styles/posts.css);
+@import url(./styles/footer.css);
+*{
+    box-sizing: border-box;
+}
+:root{
+    --amarelo-claro:#fcc302;
+    --amarelo-escuro: #daac00;
+    --branco: #fff;
+    --preto-texto: #313243;
+    --preto-fundo: #343434;
+    --azul: #00bec9;
+    --azul-escuro: #006fc9;
+    --cinza-borda-posts: #d6d6d6;
+    --fonte-principal:'Poppins', sans-serif;
+}
+
+body{
+    background-color: var(--branco);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    color: var(--branco);
+    font-family: var(--fonte-principal);
+}
